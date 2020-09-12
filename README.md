@@ -17,7 +17,10 @@ GUI application that lets the user change the Tweet's device name label by the U
 
 **Q: Twitter API v2 is gonna be a thing, and Twitter4J uses v1.1, what will happen?**
 **A:** I haven't comprehended all of this Twitter API v2 yet but if replaces (and removes) the v1.1, this program will not work anymore UNLESS: 
-**A)** Twitter4J gets updated to support v2, or **B)** I use another Twitter API Java Library that does support the new Twitter API Vv2. 
+**A)** Twitter4J gets updated to support v2, or **B)** I use another Twitter API Java Library that does support the new Twitter API V2.
+
+**Q: Android app support since it's on Java? (lol)**
+**A:** Some people would see weird the idea but yeah, I have it planned. Once I finish the public version I'll start working on an Android app.
 
 **Credits**
 
