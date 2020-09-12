@@ -1,11 +1,6 @@
 
-.idea/
-out/
-TweetFromX.iml
 /build/
-/test/
 /nbproject/
-src/com/juanpis/Backup.java
 build.xml
 /dist/
 manifest.mf
