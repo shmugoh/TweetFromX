@@ -6,7 +6,7 @@ GUI application that lets the user change the Tweet's device name label by the U
 
 **FAQ**:
 
-Q: Why Java?
+Q: Why Java?\n
 A: Most people have Java installed, so I guess this langauge is the perfect fit (and let's not forget this project was made for educative purposes so.. yeah!)
 
 Q: your code sucks lol
