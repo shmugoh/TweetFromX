@@ -7,3 +7,5 @@ TweetFromX.iml
 /nbproject/
 src/com/juanpis/Backup.java
 build.xml
+/dist/
+manifest.mf
