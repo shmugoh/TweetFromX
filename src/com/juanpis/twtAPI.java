@@ -18,6 +18,14 @@ public class twtAPI {
     private static String noConnectionError = ("No internet connection available, " +
             "please connect to the internet and try again.");
 
+    public static boolean isTweetMaximum(int t) {
+        if (t < 280) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+    
     public static String tweet(String CS, String CSS, String AT, String AST, String post) { // why
 
         ConfigurationBuilder OATH = new ConfigurationBuilder();

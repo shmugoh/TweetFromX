@@ -5,6 +5,8 @@
  */
 package com.juanpis;
 
+import javax.swing.JOptionPane;
+
 public class Main extends javax.swing.JFrame {
 
     public Main() {
@@ -23,30 +25,31 @@ public class Main extends javax.swing.JFrame {
     private void initComponents() {
 
         API_Label = new java.awt.Label();
-        API_Key = new java.awt.TextField();
+        API_KeyTF = new java.awt.TextField();
         SecretAPI_Label = new java.awt.Label();
-        SecretAPI_Key = new java.awt.TextField();
-        label3 = new java.awt.Label();
-        AccessToken = new java.awt.TextField();
-        label5 = new java.awt.Label();
-        SecretAccessToken = new java.awt.TextField();
-        label4 = new java.awt.Label();
-        TweetContent = new java.awt.TextField();
+        SecretAPI_KeyTF = new java.awt.TextField();
+        AccessTokenLabel = new java.awt.Label();
+        AccessTokenTF = new java.awt.TextField();
+        SecretAccessToken = new java.awt.Label();
+        SecretAccessTokenTF = new java.awt.TextField();
+        TweetContent = new java.awt.Label();
+        TweetContentTF = new java.awt.TextField();
         tweetButton = new java.awt.Button();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("TweetFromX - " + programVersion);
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setResizable(false);
 
         API_Label.setText("API Key");
 
         SecretAPI_Label.setText("Secret API Key");
 
-        label3.setText("Access Token");
+        AccessTokenLabel.setText("Access Token");
 
-        label5.setText("Secret Access Token");
+        SecretAccessToken.setText("Secret Access Token");
 
-        label4.setText("Tweet Content");
+        TweetContent.setText("Tweet Content");
 
         tweetButton.setLabel("Tweet!");
         tweetButton.addActionListener(new java.awt.event.ActionListener() {
@@ -65,12 +68,12 @@ public class Main extends javax.swing.JFrame {
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                             .addGap(25, 25, 25)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(label3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(AccessTokenLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(SecretAPI_Label, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGap(44, 44, 44)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(SecretAPI_Key, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(AccessToken, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(SecretAPI_KeyTF, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(AccessTokenTF, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                             .addContainerGap()
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -78,16 +81,16 @@ public class Main extends javax.swing.JFrame {
                                     .addGap(30, 30, 30)
                                     .addComponent(API_Label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(API_Key, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(API_KeyTF, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(layout.createSequentialGroup()
                                     .addGap(10, 10, 10)
-                                    .addComponent(label4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(TweetContent, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(TweetContent, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(TweetContentTF, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(layout.createSequentialGroup()
-                                    .addComponent(label5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(SecretAccessToken, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(SecretAccessToken, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                    .addComponent(SecretAccessTokenTF, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(98, 98, 98)
                         .addComponent(tweetButton, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -99,23 +102,23 @@ public class Main extends javax.swing.JFrame {
                 .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(API_Label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(API_Key, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(API_KeyTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(SecretAPI_Key, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(SecretAPI_KeyTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(SecretAPI_Label, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(AccessToken, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(label3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(AccessTokenTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AccessTokenLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(label5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(SecretAccessToken, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(SecretAccessToken, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(SecretAccessTokenTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(label4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TweetContent, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(TweetContent, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TweetContentTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(20, 20, 20)
                 .addComponent(tweetButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(20, Short.MAX_VALUE))
@@ -126,7 +129,50 @@ public class Main extends javax.swing.JFrame {
 
     private void tweetButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tweetButtonActionPerformed
 
-        // this is where everything begins
+        twtAPI twitterAPI = new twtAPI();
+        
+        String API_Key = API_KeyTF.getText();
+        String SecretAPI_Key = SecretAPI_KeyTF.getText();
+        String AccessToken = AccessTokenTF.getText();
+        String SecretAccessToken = SecretAccessTokenTF.getText();
+        String TweetContent = TweetContentTF.getText();
+        String[] TFs = {API_Key, SecretAPI_Key, AccessToken, SecretAccessToken, TweetContent};
+        boolean TFsFilled = false;
+        
+        int tweetLength = TweetContent.length();
+        
+        for (String text : TFs) {
+            int TFLength = text.length();
+            if (TFLength > 0) {
+                TFsFilled = true;
+            } else {
+                JOptionPane.showMessageDialog(this, "Please fill all the text boxes.");
+                TFsFilled = false;
+                break;
+            }
+        }
+        
+        if (TFsFilled) {
+            boolean isTweetMaximum = twtAPI.isTweetMaximum(tweetLength);
+            if (isTweetMaximum) {
+                JOptionPane.showMessageDialog(this, "Your tweet surpasses the character limit, please summarize it and try again.");
+            } else {
+                setCursor(new java.awt.Cursor(java.awt.Cursor.WAIT_CURSOR));
+                twitterAPI.tweet(API_Key, SecretAPI_Key, AccessToken, SecretAccessToken, TweetContent);
+                setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+                JOptionPane.showMessageDialog(this, "Your tweet may probably be posted or not.\n"
+                        + "For now, the GUI cannot detect and return errors such as no internet\n"
+                        + "internet connection, invalid API keys, etc. These errors will be featured\n"
+                        + "in a later version or the final public release of this program.\n"
+                        + "Also if you want to tweet again, come back in 16 minutes* to avoid\n"
+                        + "problems.\n"
+                        + "*Approximate time. As of now, I'm studying the Twitter API so.. may change."
+                        + "Thank you for comprehending");
+            }
+        } else {
+            System.out.println("Waiting for the user to fill all text boxes...");
+        }
+
         
     }//GEN-LAST:event_tweetButtonActionPerformed
 
@@ -166,16 +212,16 @@ public class Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private java.awt.TextField API_Key;
+    private java.awt.TextField API_KeyTF;
     private java.awt.Label API_Label;
-    private java.awt.TextField AccessToken;
-    private java.awt.TextField SecretAPI_Key;
+    private java.awt.Label AccessTokenLabel;
+    private java.awt.TextField AccessTokenTF;
+    private java.awt.TextField SecretAPI_KeyTF;
     private java.awt.Label SecretAPI_Label;
-    private java.awt.TextField SecretAccessToken;
-    private java.awt.TextField TweetContent;
-    private java.awt.Label label3;
-    private java.awt.Label label4;
-    private java.awt.Label label5;
+    private java.awt.Label SecretAccessToken;
+    private java.awt.TextField SecretAccessTokenTF;
+    private java.awt.Label TweetContent;
+    private java.awt.TextField TweetContentTF;
     private java.awt.Button tweetButton;
     // End of variables declaration//GEN-END:variables
 }
