@@ -1,5 +1,6 @@
 package com.juanpis;
 
+import javax.swing.JOptionPane;
 import twitter4j.TwitterException;
 import twitter4j.conf.ConfigurationBuilder;
 import twitter4j.Twitter;
@@ -10,7 +11,7 @@ import twitter4j.auth.AccessToken;
 import twitter4j.auth.RequestToken;
 
 public class twtAPI {
-
+    
     public Object tweet;
 
     private static boolean isTweeted;
@@ -28,6 +29,8 @@ public class twtAPI {
     
     public static String tweet(String CS, String CSS, String AT, String AST, String post) { // why
 
+        Main GUI = new Main();
+        
         ConfigurationBuilder OATH = new ConfigurationBuilder();
         OATH.setDebugEnabled(true)
                 .setOAuthConsumerKey(CS)
@@ -37,16 +40,17 @@ public class twtAPI {
 
         TwitterFactory tf = new TwitterFactory(OATH.build());
         Twitter twt = tf.getInstance();
+    
 
         try {
             Status status = twt.updateStatus(post);
-            return tweetSuccessful;
-        } catch (TwitterException name) {
-            return noConnectionError;
+            GUI.successSignal();
+        } 
+        catch (TwitterException name) {
+            GUI.errorSignal();
         } finally {
-            return noConnectionError;
+            return "Finished";
         }
-
 
         }
 
