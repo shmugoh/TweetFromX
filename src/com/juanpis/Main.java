@@ -12,7 +12,7 @@ public class Main extends javax.swing.JFrame {
     public Main() {
         initComponents();
     }
-    String programVersion = "v1.1.1";
+    String programVersion = "v1.0";
     
     public void successSignal() {
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
