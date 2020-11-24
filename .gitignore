@@ -1,9 +1,7 @@
 
 /build/
 /nbproject/
-build.xml
 /dist/
 manifest.mf
 /store/
 .idea/
-TweetFromX.iml
