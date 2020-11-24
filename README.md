@@ -3,25 +3,27 @@
 GUI application that lets the user change the Tweet's device name label by the User's Application's API keys and Access Token.
 **This project was made for educative purposes.**
 
+## Important note about the future of TweetFromX
+As of writing this (November 23th 2020), I will no longer be bringing new updates for TweetFromX (PC version). I feel like this software is as good enough.
+I have put a halt to the promised features that can be found on the releases page in v1.1. However, if there's either a requested issue or a pull request I will definitely bring those to TweetFromX. I haven't worked 2 months on this program and after returning to it I see a horrible codebase. If you feel like something feels off on the code feel free to do a pull request and I'll review it. This will also affect the Android version too.
 
-**FAQ**:
+## Guide on getting this code running on NetBeans.
+hi if youre from the future and seeing this out of curiosity this is a wip atm.
 
-**Q: Why Java?**
-**A:** Most people have Java installed, so I guess this langauge is the perfect fit (and let's not forget this project was made for educative purposes so.. yeah!)
+## FAQ
 
-**Q: your code sucks lol**
-**A:** it's been really a long while since i haven't written in java and i kinda forgot some stuff. if you feel like something's wrong feel free to send feedback via pull requests, i'll gladly check it out!
+#### Q: Why Java?
+Most people have Java installed, so I guess this langauge is the perfect fit (and let's not forget this project was made for educative purposes so.. yeah!)
 
-**Q: I posted the tweet in the program but there's no error, help!**
-**A:** I know about this and I will implement GUI errors soon. Please keep in mind I can't do it the next day, maybe next month or years because I have other important stuff to focus on, like school.
+#### Q: your code sucks lol
+it's been really a long while since i haven't written in java and i kinda forgot some stuff. if you feel like something's wrong feel free to send feedback via pull requests, i'll gladly check it out!
 
-**Q: Twitter API v2 is gonna be a thing, and Twitter4J uses v1.1, what will happen?**
-**A:** I haven't comprehended all of this Twitter API v2 yet but if replaces (and removes) the v1.1, this program will not work anymore UNLESS: 
-**A)** Twitter4J gets updated to support v2, or **B)** I use another Twitter API Java Library that does support the new Twitter API V2.
+#### Q: Twitter API v2 is gonna be a thing, and Twitter4J uses v1.1, what will happen?
+Yeah, no worries. Twitter is apparently planning to make their own library for some programming languages (like Java) with support for Twitter API v2 so no worries. Either I'll use that (and rewrite the twtAPI.java file) or still use Twitter4J if they update their library to support v2.
 
-**Q: Android app support since it's on Java? (lol)**
-**A:** Some people would see weird the idea but yeah, I have it planned. Once I finish the public version I'll start working on an Android app.
+#### Q: Android app support since it's on Java? 
+Of course! I'm working on one right now and soon I'll link it once I finish it.
 
-**Credits**
+## Credits
 
 Credit to Yusuke and the Twitter4J contributors for creating and developing a complicated yet amazing Java library for Twitter API. You all are literally gods, even if it seems so simple to you all.
