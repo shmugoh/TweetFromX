@@ -1,6 +1,6 @@
 # TweetFromX
 
-GUI application that lets the user change the Tweet's device name label by the User's Application's API keys and Access Token.
+GUI application that lets the user change the Tweet's device name label by the user's aplication's API keys and access tokens.
 **This project was made for educative purposes.**
 
 ## Important note about the future of TweetFromX
@@ -27,11 +27,17 @@ Also I'm gonna say this cause why not, I used JDK-8u261 to develop this, so if y
 
 ## FAQ
 
+#### Q: How do I get these "api keys" and "access tokens"?
+All I can say is apply on https://developer.twitter.com/en. Do not lie and please be sincere on what you're gonna do, since Twitter is really tough on this to avoid spambots. Also even if this is obvious, DO NOT LEAK YOUR API KEYS NOR YOUR ACCESS TOKEN. Even if you can regenerate it, you shouldn't really leak them.
+
+#### Q: What happened to that 16 minute lockdown that you were gonna implement?
+Please refer to the section of "Important note about the future of TweetFromX", which can be found on the top.
+
 #### Q: Why Java?
 Most people have Java installed, so I guess this langauge is the perfect fit (and let's not forget this project was made for educative purposes so.. yeah!)
 
-#### Q: Your code feels... off
-I know it does, and I have halted support on this program. Please refer to Important note about the future of TweetFromX for more information about this and how you can help. 
+#### Q: Your code, guide, and/or README.md file feels... off
+I know it does, and about the code I have halted support on this program. Please refer to Important note about the future of TweetFromX for more information about this and how you can help. 
 
 #### Q: Twitter API v2 is gonna be a thing, and Twitter4J uses v1.1, what will happen?
 Yeah, no worries. Twitter is apparently planning to make their own library for some programming languages (like Java) with support for Twitter API v2 so no worries. Either I'll use that (and rewrite the twtAPI.java file) or still use Twitter4J if they update their library to support v2.
