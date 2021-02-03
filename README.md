@@ -1,3 +1,6 @@
+# it's been months since i haven't worked on this and everything about this is messy. when i can, i will improve as much as possible about this
+# also no android version incoming; sorry kids
+
 # TweetFromX
 
 GUI application that lets the user change the Tweet's device name label by the user's aplication's API keys and access tokens.
@@ -5,7 +8,7 @@ GUI application that lets the user change the Tweet's device name label by the u
 
 ## Important note about the future of TweetFromX
 As of writing this (November 23th 2020), I will no longer be bringing new updates for TweetFromX (PC version). I feel like this software is as good enough.
-I have put a halt to the promised features that can be found on the releases page in v1.1. However, if there's either a requested issue or a pull request I will definitely bring those to TweetFromX. I haven't worked 2 months on this program and after returning to it I see a horrible codebase. If you feel like something feels off on the code feel free to do a pull request and I'll review it. This will also affect the Android version too.
+I have put a halt to the promised features that can be found on the releases page in v1.1. However, if there's either a requested issue or a pull request I will definitely bring those to TweetFromX. I haven't worked 2 months on this program and after returning to it I see a horrible codebase. If you feel like something feels off on the code feel free to do a pull request and I'll review it.
 
 ## Horrible guide on getting this code running on NetBeans.
 
@@ -41,9 +44,6 @@ I know it does, and about the code I have halted support on this program. Please
 
 #### Q: Twitter API v2 is gonna be a thing, and Twitter4J uses v1.1, what will happen?
 Yeah, no worries. Twitter is apparently planning to make their own library for some programming languages (like Java) with support for Twitter API v2 so no worries. Either I'll use that (and rewrite the twtAPI.java file) or still use Twitter4J if they update their library to support v2.
-
-#### Q: Android app support since it's on Java? 
-Of course! I'm working on one right now and soon I'll link it once I finish it.
 
 ## Credits
 
