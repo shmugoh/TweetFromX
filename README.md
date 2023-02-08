@@ -1,6 +1,3 @@
-# it's been months since i haven't worked on this and everything about this is messy. when i can, i will improve as much as possible about this
-# also no android version incoming; sorry kids
-
 # TweetFromX
 
 GUI application that lets the user change the Tweet's device name label by the user's aplication's API keys and access tokens.
